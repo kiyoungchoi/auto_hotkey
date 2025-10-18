@@ -3,18 +3,18 @@ Alt::Control
 ^Space::Send("{vk15sc1F2}")
 
 SetCapsLockState "AlwaysOff"
-CapsLock::LCtrl
+CapsLock::LAlt
 
-<^h::Send("{Left}")
-<^j::Send("{Down}")
-<^k::Send("{Up}")
-<^l::Send("{Right}")
+<!h::Send("{Left}")
+<!j::Send("{Down}")
+<!k::Send("{Up}")
+<!l::Send("{Right}")
 
 
 ; Ctrl + Tab → Alt + Tab처럼 작동
 ^Tab::Send("!{Tab}")
 
-Esc:: {
+<!c:: {
     ret := IME_CHECK("A")
     if ret != 0 {
         ;Send("{Esc}")
